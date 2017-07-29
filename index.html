@@ -1,35 +1,133 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>
-		Title Project
-	</title>
-	<style>
-		header{
-			background: #333;
-		}
-		#logo{
+	<head>
+		<style>
+			h1,h2,h3,h4,h5,h6,body {
+				margin: 0;
+			}
+			body {
+				/*background:  no-repeat fixed center top #000000;*/
+				background-image: url("https://sites.google.com/site/javakopil/image/animeindo11.png");
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-attachment: fixed;
+			}
+			header {
+				display: flex;
+				justify-content: space-between;
+				width: 1000px;
+				/*background: red;*/
+				margin: 0 auto;
+			}
+			.logo-class {
+				flex-basis: 10%;
+				/*background: blue;*/
+				color: white;
+				width: 10%;
+			}
+			.media-social {
+				
+			}
+			.content {
+				background: white;
+				min-height: 400px;
+				width: 1000px;
+				margin: 164px auto 0 auto;
+			}
+			.menu-bar {
+				background: #2b2b2b;
+				font-family: tahoma;
+				color: gray;
+				display: flex;
+				justify-content: space-between;
+			}
+			.menu-bar nav {
+				display: flex;
+			}
+			.menu-bar a {
+				padding: 1em;
+				display: block;
+				color: gray;
+				background: transparent;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+			.menu-bar a:hover {
+				background: orange;
+				color: white;
+			}
+			.search {
+				padding: 1em;
+				position: relative;
+			}
+			.search input {
+				outline: none;
+				border-radius: 5px;
+				font-size: 1.1em;
+			}
+			.magnifier {
+				position: absolute;
+				top: 16px;
+				right: 15px;
+				width: 27px;
+				height: 27px;
+				background: gray;
+				border-radius: 0 5px 5px 0;
+				border: none;
+				/*margin-left: -20px;*/
 
-		}
-		body{
-			margin:0;
-			background-color: #999;
-		}
-	</style>
-</head>
-<body>
-	<div id="logo"></div>
-	<h2></h2>
-</body>
+			}
+			.magnifier img{
+				width: 100%;
+			}
 
-<header class="besar">
-	<h2>ini dari aris</h2>
-	<ul>
-		<li><a href="#">Beranda gua rubah</a></li>
-		<li><a href="#">Sejarah</a></li>
-	</ul>
-</header>
-<!-- selesai header -->
-<!-- mulai section dengan id"seksi" class "sedang merah" -->
-<section id="seksi" class="sedang merah"></section>
+		</style>
+	</head>
+	<body>
+		<!-- header start -->
+		<header>
+			<div class="logo-class">
+				Logo Anime
+			</div>
+			<div class="media-social">
+				<a href="#twitter">
+					<img src="http://animeindo.video/wp-content/themes/wpanime2/img/twitter.png" alt="">
+				</a>
+				<a href="#subsribe">
+					<img src="http://animeindo.video/wp-content/themes/wpanime2/img/rss.png" alt="">
+				</a>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- content start -->
+		<div class="content">
+
+			<section class="menu-bar">
+				<nav>
+					<a href="#">
+						Home
+					</a>
+					<a href="#">
+						Anime List
+					</a>
+					<a href="#">
+						Jadwal Rules
+					</a>
+				</nav>
+
+				<div class="search">
+					<input placeholder="Search...." type="text">
+					<button class="magnifier">
+						<img src="img/musica-searcher.png" alt="">
+					</button>
+				</div>
+
+			</section>
+
+			<section class="article"></section>
+		</div>
+		<!-- end content -->
+
+
+	</body>
 </html>
